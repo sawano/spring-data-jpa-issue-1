@@ -14,14 +14,14 @@ import static org.assertj.core.api.Assertions.assertThatCode;
 public class RepositoryTests {
 
     @Autowired
-    PersonRepository myRepository;
+    PersonRepository repository;
 
     @Test
     public void readFromDatabase() {
-        assertThatCode(() -> myRepository.findAllByCity("some-city", Pageable.unpaged()))
+        assertThatCode(() -> repository.findAllByCity("some-city", Pageable.unpaged()))
                 .doesNotThrowAnyException();
 
-        assertThatCode(() -> myRepository.findAllByName("some-name", Pageable.unpaged()))
+        assertThatCode(() -> repository.findAllByName("some-name", Pageable.unpaged()))
                 .doesNotThrowAnyException();
     }
 
