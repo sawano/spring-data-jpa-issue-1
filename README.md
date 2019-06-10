@@ -3,6 +3,8 @@
 Example code to illustrate issue with `org.springframework.data.domain.Slice` return type in 
 `PagingAndSortingRepositories`.
 
+**Jira issue**: [https://jira.spring.io/browse/DATAJPA-1554](https://jira.spring.io/browse/DATAJPA-1554)
+
 [This test](https://github.com/sawano/spring-data-jpa-issue-1/blob/master/src/test/java/se/sawano/spring/data/jpa/issue/RepositoryTests.java#L24)
  should not fail when calling [this method](https://github.com/sawano/spring-data-jpa-issue-1/blob/master/src/main/java/se/sawano/spring/data/jpa/issue/PersonRepository.java#L10).
 
